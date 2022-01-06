@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/react-around-auth/static/css/main.e6c13ad2.css",
+    "main.js": "/react-around-auth/static/js/main.b27ea3c2.js",
+    "static/js/787.08639659.chunk.js": "/react-around-auth/static/js/787.08639659.chunk.js",
+    "static/media/NotoSerif-Bold.ttf": "/react-around-auth/static/media/NotoSerif-Bold.6f4fe161fca0181b0bee.ttf",
+    "static/media/NotoSerif-Regular.ttf": "/react-around-auth/static/media/NotoSerif-Regular.f0f09dd7eed2ae0d3d0b.ttf",
+    "static/media/partner.jpg": "/react-around-auth/static/media/partner.8f55f0ca697b91b368d1.jpg",
+    "static/media/tree.jpg": "/react-around-auth/static/media/tree.718fd9b1300ff35886d9.jpg",
+    "static/media/headshot.jpg": "/react-around-auth/static/media/headshot.30cc4ec7fdd567219d5a.jpg",
+    "static/media/logo.png": "/react-around-auth/static/media/logo.2276498e3bc6f23764f1.png",
+    "static/media/brokerCheck.jpg": "/react-around-auth/static/media/brokerCheck.c3eccfd6c9d2fedcbb99.jpg",
+    "index.html": "/react-around-auth/index.html",
+    "static/media/close-icon.svg": "/react-around-auth/static/media/close-icon.e6c3a9a9a26912881a20df6d98e3ec10.svg",
+    "main.e6c13ad2.css.map": "/react-around-auth/static/css/main.e6c13ad2.css.map",
+    "main.b27ea3c2.js.map": "/react-around-auth/static/js/main.b27ea3c2.js.map",
+    "787.08639659.chunk.js.map": "/react-around-auth/static/js/787.08639659.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.b27ea3c2.js"
+  ]
+}
