@@ -1,25 +1,54 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from 'react';
+import { Route, Routes } from 'react-router-dom';
+import About from './components/About/about';
+import Contact from './components/Contact/contact';
+import Footer from './components/Footer/footer';
+import Header from './components/Header/header';
+import Hero from './components/Hero/hero';
+import Mission from './components/Mission/mission';
+import Popup from './components/Popup/popup';
 
-function App() {
+const App = () => {
+
+  const [popupOpen, setPopupOpen] = useState(false);
+
+  const openPopup = () => {
+    setPopupOpen(true);
+  }
+
+  const closePopup = () => {
+    setPopupOpen(false);
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <Header
+        openPopup={openPopup}
+      />
+      <Routes>
+        <Route path='/home'
+          element={
+            <>
+              <Hero />
+              <div id='mission'>
+                <Mission />
+              </div>
+              <div id='about'>
+                <About />
+              </div>
+            </>
+          }>
+        </Route>
+        <Route path='/contact'
+          element={<Contact />}>
+        </Route>
+      </Routes>
+      <Footer />
+      <Popup
+        isOpen={popupOpen}
+        closePopup={closePopup} />
+    </>
+  )
 }
 
 export default App;

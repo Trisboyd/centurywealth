@@ -1,12 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { HashRouter } from 'react-router-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import FontStyles from './components/Styles/FontStyles/fontStyles';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <HashRouter>
+      <FontStyles />
+      <App />
+    </HashRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );

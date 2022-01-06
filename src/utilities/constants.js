@@ -1,0 +1,7 @@
+export const missionStatement = "We're here to make you money, and in the process also make ourselves obscenely wealthy. We're based on a big tree on Satan's campus that is big and stuff and that choice is trying to simultaneously take advantage of potential aggie clients and also associate our portfolio strength with that of a gigantic tree even though we're really not very good. The End.";
+
+export const address = '5555 Bad Investing Rd., College Station, TX 77845';
+
+export const bioL = 'Lucas Coffey is a financial advisor who used to work for Edward Jones before deciding that he wanted to take more of your money rather than have some greedy corporation skimming off the top of HIS bottom line. He lives in College Station with his expecting wife and two dogs.  He also used to wear an ugly letterman jacket with way too many patches, but those days are long gone.';
+
+export const bioN = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tincidunt lobortis feugiat vivamus at augue eget arcu. Curabitur gravida arcu ac tortor dignissim convallis aenean. Aliquam sem fringilla ut morbi tincidunt augue interdum velit. Sit amet mattis vulputate enim nulla aliquet. Justo nec ultrices dui sapien.'
