@@ -1,5 +1,6 @@
 import { HeaderBar, HeaderLink, HeaderLinks, PageLink } from './styledHeader';
 import { useLocation } from 'react-router-dom';
+import { Navigate } from 'react-router-dom';
 
 const Header = (props) => {
 
@@ -7,6 +8,10 @@ const Header = (props) => {
 
     const openPopup = () => {
         props.openPopup();
+    }
+
+    const handleClientClick = () => {
+        props.loggedIn ? Navigate('/accounthome') : openPopup();
     }
 
     return (
@@ -43,7 +48,7 @@ const Header = (props) => {
                 </HeaderLink>
                 <HeaderLink
                     to='#'
-                    onClick={openPopup}>
+                    onClick={handleClientClick}>
                     Clients
                 </HeaderLink>
             </HeaderLinks>

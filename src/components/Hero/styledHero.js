@@ -6,7 +6,7 @@ export const HeroContainer = styled.section`
     flex-direction: column;
     justify-content: space-between;
     width: 100%;
-    height: 50vw;
+    height: 45vw;
     background: url(${tree});
     background-size: cover;
     background-position: bottom;

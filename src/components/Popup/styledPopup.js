@@ -63,10 +63,11 @@ export const InputLabel = styled.label`
     font-weight: 400;
     font-size: 18px;
     line-height: 1.5;
-    color: black;
     position: absolute;
     margin-left: 1%;
     transition: 0.3s ease all;
+    transform: ${props => props.hasValue ? 'translate(0, -28px) scale(1)' : ''};
+    color: ${props => props.hasValue ? 'white' : 'black'};
 
     ${InputContainer}:hover & {
         transform: translate(0, -28px) scale(1);
@@ -82,8 +83,9 @@ export const Submit = styled.button`
     outline: none;
     width: 50%;
     height: 40px;
-    background: #058CBA;
+    background: ${props => props.isValid ? '#058CBA' : '#2F71E5'};
     color: white;
+    cursor: pointer;
 
     @media (max-width: 525px) {
         margin: 20px auto;
@@ -93,4 +95,18 @@ export const Close = styled.img`
     position: absolute;
     top: -15px;
     right: -15px;
+    cursor: pointer;
+`
+export const FormSwitch = styled.p`
+    font-family: 'Noto', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 17px;
+    text-align: center;
+    color: #FFF;
+`
+export const FormSwitchSpan = styled.a`
+    color: #6DFB9E;
+    margin-left: 12px;
+    cursor: pointer;
 `
