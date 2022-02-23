@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
-import { Route, Routes, Navigate } from 'react-router-dom';
+import { Route, Routes, useNavigate } from 'react-router-dom';
 
 import { CurrentUserContext } from './contexts/CurrentUserContext';
 import mainApi from './utilities/MainAPI';
@@ -29,7 +29,7 @@ const App = () => {
 
   const token = localStorage.getItem('token');
 
-  const navigate = Navigate;
+  const navigate = useNavigate();
 
 
   // ____________________________________________registration function
@@ -58,6 +58,7 @@ const App = () => {
         if (response.token) {
           setLoggedIn(true);
           closePopup();
+          navigate('/accounthome');
         }
       })
       .catch(error => console.log(error));
@@ -130,7 +131,7 @@ const App = () => {
         <Route path='/accounthome'
           element={<ProtectedRoute
             loggedIn={loggedIn}
-            element={<ClientHome
+            component={<ClientHome
               username={currentUser.name} />}>
           </ProtectedRoute>
           }>

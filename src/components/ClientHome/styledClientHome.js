@@ -20,6 +20,7 @@ export const ClientTitle = styled.h2`
     text-align: center;
     padding: 20px 0;
     color: black;
+    margin: 60px auto 0;
 
     @media (max-width: 768px) {
         font-size: 32px;
@@ -39,7 +40,7 @@ export const AccountDiv = styled.div`
     background: ${props => props.$market ? `url(${wallStreet})` : 'white'};
     background-position: top;
     width: ${props => props.size};
-    margin: 50px 0;
+    margin: 50px 5px;
     padding: 15px 30px;
     border-radius: 10px;
 `

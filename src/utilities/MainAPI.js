@@ -44,6 +44,7 @@ class mainAPI {
             body: JSON.stringify({ email, password })
         })
             .then((res) => {
+                console.log(res);
                 return this._checkResponse(res);
             })
             .then((data) => {
@@ -54,9 +55,9 @@ class mainAPI {
             })
     }
 
-    checkResponse = (res) => {
+    _checkResponse = (res) => {
         if (res.ok) {
-            return res.json
+            return res.json();
         }
         else {
             return Promise.reject(`Error: ${res.status}`);

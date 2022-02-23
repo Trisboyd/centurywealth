@@ -8,11 +8,11 @@ const ClientHome = (props) => {
     return (
         <HomeSection>
             <ClientTitle>
-                Welcome, Tristan{props.username}
+                Welcome, {props.username}
             </ClientTitle>
             <HomeDiv>
                 <AccountDiv
-                    size={'40vw'}>
+                    size={'35vw'}>
                     <AccountsText
                         $bold={true}
                         size={'20px'}>
@@ -56,7 +56,8 @@ const ClientHome = (props) => {
                         </AccountsText>
                     </AccountsRow>
                 </AccountDiv>
-                <AccountDiv>
+                <AccountDiv
+                    size={'25vw'}>
                     <AccountsText
                         $bold={true}
                         size={'24px'}>
@@ -64,7 +65,7 @@ const ClientHome = (props) => {
                     </AccountsText>
                     <AccountsRow
                         direction={'column'}>
-                            <AccountsPic src={pig}/>
+                        <AccountsPic src={pig} />
                         <AccountsText
                             tAlign={'center'}>
                             {props.username} Retirement
@@ -76,7 +77,7 @@ const ClientHome = (props) => {
                     </AccountsRow>
                     <AccountsRow
                         direction={'column'}>
-                            <AccountsPic src={home}/>
+                        <AccountsPic src={home} />
                         <AccountsText
                             tAlign={'center'}>
                             {props.username} House Down Payment
@@ -96,23 +97,23 @@ const ClientHome = (props) => {
                         tAlign={'center'}
                         $bold={true}
                         size={'32px'}>
-                            Market Watch
+                        Market Watch
+                    </AccountsText>
+                    <AccountsRow>
+                        <AccountsText>
+                            DJIA
                         </AccountsText>
-                        <AccountsRow>
-                            <AccountsText>
-                                DJIA
-                            </AccountsText>
-                        </AccountsRow>
-                        <AccountsRow>
-                            <AccountsText>
-                                COMPQ
-                            </AccountsText>
-                        </AccountsRow>
-                        <AccountsRow>
-                            <AccountsText>
-                                SPX
-                            </AccountsText>
-                        </AccountsRow>
+                    </AccountsRow>
+                    <AccountsRow>
+                        <AccountsText>
+                            COMPQ
+                        </AccountsText>
+                    </AccountsRow>
+                    <AccountsRow>
+                        <AccountsText>
+                            SPX
+                        </AccountsText>
+                    </AccountsRow>
                 </AccountDiv>
             </HomeDiv>
         </HomeSection>
